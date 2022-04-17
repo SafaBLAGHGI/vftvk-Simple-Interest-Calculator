@@ -1,39 +1,59 @@
 <!doctype html>
 <html>
     <head>
-        <title>Simple Interest Calculator</title>
+        <title>Web App - Simple Interest Calculator</title>
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
         <div class="maindiv">
             <h1>Simple Interest Calculator</h1>
-            <p>
-                Amount <input type="number" id="principal">  <br/>
-                Interest Rate <input type="range" id="rate" min="1" max="20" step="0.25" value="10.25" onchange="updateRate()">
-                <span id="rate_val">10.25%</span>  <br/>
-                No. of Years 
-                <select id="years">
-                    <option value="1">1</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                    <option value="4">4</option>
-                    <option value="5">5</option>
-                    <option value="6">6</option>
-                    <option value="7">7</option>
-                    <option value="8">8</option>
-                    <option value="9">9</option>
-                    <option value="10">10</option>
-                </select>  <br/>
-                
-                <button onclick="compute()">Compute Interest</button><br>
-                <span id="result">
+            <table class="maincontent">
+                <tr>
+                    <td>
+                        Amount
+                    </td>
+                    <td>
+                        <input type="number" id="principal" class="input">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Interest Rate
+                    </td>
+                    <td>
+                        <input type="range" id="rate" min="1" max="20" step="0.25" value="10.25" onchange="updateRate()" class="input">
+                        <span id="rate_val" class="input">10.25%</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        No. of Years
+                    </td>
+                    <td>
+                        <select id="years" class="input">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                            <option value="10">10</option>
+                        </select>
+                    </td>
+                </tr>
+            </table>
+            <button onclick="compute()" id="button">Compute Interest</button><br>
+            <span id="result">
                     
-                </span><br>
-            </p>
+            </span>
+            <footer>
+                &#169; Everyone Can Get Rich
+            </footer>
         </div>
-        <footer>
-             &#169; This Calculator belongs to Safa BLAGHGI
-        </footer>
+        
         <script src="script.js"></script>
     </body>
 </html>

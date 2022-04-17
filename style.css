@@ -6,13 +6,30 @@ body {
 h1{
 	color: grey;
 	font-family: verdana;
+	text-align: center;
 }
 .maindiv{
-	margin: 0 auto;
+	margin: auto;
 	background-color: white;
 	color: black;
-	width: 300px;
+	width: 500px;
 	padding: 20px;
 	border-radius: 25px;
 }
 
+.maincontent{
+	margin: 20px;
+}
+
+#button{
+	margin: 0px 10px 10px 10px;
+}
+
+#result{
+	margin-top: 10px;
+	margin-bottom: 30px;
+}
+
+.input{
+	margin: 10px 0px 10px 0px;
+}
